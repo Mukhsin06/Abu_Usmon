@@ -63,7 +63,7 @@ function Services(props) {
     };
 
     return (
-        <div className="w-[100%] h-screen text-center translate-y-72 mt-[-350px] sm:mt-[20px] ">
+        <div className="w-[100%] h-screen text-center translate-y-72 mt-[-350px] sm:mt-[20px] sm:translate-y-[-100px]">
             <h3 className={"translate-y-[80px] text-[16px] sm:w-[200px] sm:ml-[100px]"}>Eng yaxshi xizmatlar</h3>
             <h2 className={"translate-y-[85px] text-[36px] sm:w-[300px] sm:ml-[50px]"}>Bizning xizmatlar</h2>
             <p className={"w-[955px] translate-x-[260px] translate-y-[85px] text-[16px] text-[#666666] sm:translate-x-0 sm:w-[90%] sm:ml-[15px]"}>
@@ -78,22 +78,22 @@ function Services(props) {
                         img: Book,
                         title: 'Muhmonhona',
                         desc: '4-5 yuldizli mexmon xona xizmati \n' +
-                            '3-maxal uzbek milliy taomlari Maka Madina Mexmon xona Alohida mavjut   '
+                            '3-maxal uzbek milliy taomlariMaka Madina Mexmon xonaAlohida mavjut '
                     },
                     {
                         img: Book2,
                         title: ' Taxi',
-                        desc: 'Taxi topib berishi xizmati mavjut va boshqa xizmatlar mavjut '
+                        desc: 'Taxi topib berishi xizmati mavjutva boshqa xizmatlar mavjut'
                     },
                     {
                         img: Book3,
                         title: ' Samolyot',
-                        desc: 'Togridan togri reys  xizmatlar bepul  Biitel topib berish xizmat mavjut  '
+                        desc: 'Togridan togri reys xizmatlar bepul Biitel topib berish xizmat mavjut'
                     },
                     {
                         img: Book4,
                         title: ' Visa',
-                        desc: 'Umra visa va sayoxat visa  mavjut aloxida visa oberish xam mavjut '
+                        desc: 'Umra visa va sayoxat visa mavjut aloxida visa oberish xam mavjut'
                     }
                 ].map((service, index) => (
                     <div

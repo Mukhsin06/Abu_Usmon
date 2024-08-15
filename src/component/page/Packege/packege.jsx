@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Button, Modal, message } from 'antd';
-import Img from "../../asstes/travael.jpg";
-import Img1 from "../../asstes/travael1.jpg";
-import Img2 from "../../asstes/travel2.jpg";
+import Img from "../../asstes/u`mra/photo_2024-08-09_20-43-00 1.png";
+import Img1 from "../../asstes/u`mra/photo_2024-08-15_18-04-16 1.png";
+import Img2 from "../../asstes/u`mra/photo_2024-08-09_20-36-22 1.png";
 import Img3 from "../../asstes/travel3.jpg";
-import Img4 from "../../asstes/umra/photo_20_2024-08-10_18-07-10.jpg";
-import Img5 from "../../asstes/umra/photo_18_2024-08-10_18-07-10.jpg";
-import Img6 from "../../asstes/umra/photo_14_2024-08-10_18-07-10.jpg";
+// import Img4 from "../../asstes/umra/photo_20_2024-08-10_18-07-10.jpg";
+// import Img5 from "../../asstes/umra/photo_18_2024-08-10_18-07-10.jpg";
+// import Img6 from "../../asstes/umra/photo_14_2024-08-10_18-07-10.jpg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Image } from 'antd';
@@ -84,13 +84,10 @@ const MultiCarousel = () => {
     };
 
     const trips = [
-        { name: "Trip to Thailand", img: Img },
-        { name: "Trip to Bali", img: Img1 },
-        { name: "Trip to Maldives", img: Img2 },
-        { name: "Trip to Japan", img: Img3 },
-        { name: "Trip to Umra", img: Img4 },
-        { name: "Trip to Japan 2", img: Img5 },
-        { name: "Trip to Japan 3", img: Img6 },
+        { name: "Masjidul Haram", img: Img, p: "Masjidul haramga 11-kun umra amallari" },
+        { name: "Qizil dengiz", img: Img1, p: "Qizildengiz sayohati          " },
+        { name: "Madina munavara", img: Img2 , p: "Qubo masjidi                      "},
+        { name: "Manar Al-Tavhit 2", img: Img3 ,p: "Hojilarimizdan foto lavha                     "},
     ];
 
     return (
@@ -120,7 +117,7 @@ const MultiCarousel = () => {
             }
             customRightArrow={
                 <button
-                    className="custom-right-arrow"
+                    className="custom-right-arrow "
                     style={{
                         position: 'absolute',
                         right: '10px',
@@ -140,13 +137,14 @@ const MultiCarousel = () => {
                     →
                 </button>
             }
+            className='flex justify-center items-center sm:justify-start sm:items-start'
         >
             {trips.map((trip, index) => (
-                <div key={index} className="flex flex-col items-start p-4 sm:ml-[50px] lg:ml-20 sm:w-full lg:w-full">
+                <div key={index} className="flex h-[450px]   flex-col items-start p-4 sm:ml-[50px] lg:ml-20 sm:w-full lg:w-full">
                     <Image height={260} width={250} src={trip.img} alt={trip.name} className="w-[280px] h-[200px] rounded-lg object-cover shadow-lg" />
                     <h2 className="mt-4 text-left text-xl font-semibold">{trip.name}</h2>
                     <p className="text-left text-base text-gray-600 w-[70%]">
-                        Join the leader in smallship cruising on the Great Lakes,
+                        {trip.p}
                     </p>
                     <Button onClick={() => showModal(trip)} className="w-[170px] h-[50px] mt-2 rounded-lg bg-[#EEAA2B] text-white shadow-md hover:bg-[#d99926]">
                         View Details

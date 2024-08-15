@@ -61,7 +61,7 @@ function Tours(props) {
             <br/>
             <br/>
             <br/>
-            <div className="w-[950px] h-[120px] rounded-md border border-[#CACACA] mt-[-152px] ml-[200px]  sm:flex sm:flex-col sm:w-[90%] sm:ml-4 sm:h-auto lg:w-[95%] lg:ml-2 lg:flex lg:flex-col lg:h-auto">
+            <div className="w-[950px] h-[120px] rounded-md border border-[#CACACA] mt-[-252px] ml-[200px]  sm:flex sm:flex-col sm:w-[90%] sm:mt-[-150px] sm:ml-4 sm:h-auto lg:w-[95%] lg:ml-2 lg:flex lg:flex-col lg:h-auto">
                 <form onSubmit={handleSubmit} className="flex space-x-2 p-4 sm:flex-col lg:flex-col">
                     <div className="flex flex-col">
                         <label htmlFor="location" className="mb-2 ml-4">Ism</label>

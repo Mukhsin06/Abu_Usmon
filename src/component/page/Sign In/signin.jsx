@@ -64,7 +64,7 @@ function Signin() {
 
     return (
         <div>
-            <div className="w-full h-screen pt-20 flex flex-col items-center sm:mt-[300px] sm:ml-[-1px] sm:w-[90%] ">
+            <div className="w-full h-screen pt-20 mb-12 sm:mb-44 flex flex-col items-center  sm:ml-[-1px] sm:w-[90%] ">
                 <h2 className="text-[36px] text-center sm:text-[25px]">Aloqa qiling</h2>
                 <div className="w-[950px] flex justify-center sm:w-full lg:w-full lg:px-6">
                     <p className="w-[950px] text-center sm:w-full lg:w-full sm:ml-3">
